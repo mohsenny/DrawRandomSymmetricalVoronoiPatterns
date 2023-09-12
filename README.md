@@ -1,5 +1,8 @@
 # Symmetrical Voroni Patterns generator
 
+Upon every execution, it generates random voroni patterns that are symmetrical both horizontali and vertically.
+
+## Install and execute
 ```
 npm install
 node draw.js
