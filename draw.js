@@ -31,7 +31,11 @@ function getRandomColor() {
   for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
-  return color;
+  
+  // Append an alpha value between 0.4 and 1.0
+  const alpha = (Math.random() * 0.6 + 0.4).toFixed(2);
+  
+  return `${color}${Math.floor(alpha * 255).toString(16).toUpperCase()}`;
 }
 
 function drawPolygon(points, color) {
